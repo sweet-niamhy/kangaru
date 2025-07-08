@@ -7,7 +7,7 @@ Those are the current major versions that are still supported for security vulne
 | Version | Supported          |
 | ------- | ------------------ |
 | 4.x.y   | :white_check_mark: |
-| 3.x.y   | :white_check_mark: |
+| 3.x.y   | :x:                |
 | 2.x.y   | :x:                |
 | 1.x.y   | :x:                |
 
