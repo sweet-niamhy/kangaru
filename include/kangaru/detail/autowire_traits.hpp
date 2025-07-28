@@ -185,7 +185,7 @@ struct default_inject_function_t {
 		return inject(std::forward<Args>(args)...);
 	}
 }
-constexpr default_inject_function{};
+extern constexpr default_inject_function{};
 
 /*
  * A construct function usable by many service definition implementation.
