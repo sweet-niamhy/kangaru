@@ -38,7 +38,7 @@ using value_type_t = typename T::value_type;
  * 
  * We defined the variable before the type because the variable is private, but the type is public.
  */
-struct in_place_t {} extern constexpr in_place{};
+struct in_place_t {} extern in_place;
 
 } // namespace detail
 } // namespace kgr
