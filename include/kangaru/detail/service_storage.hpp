@@ -32,7 +32,7 @@ struct typed_service_storage {
 /*
  * Tag type to tell service_storage that its supposed to contain an index of an override
  */
-struct override_index_t {} extern constexpr override_index{};
+struct override_index_t {} extern override_index;
 
 /*
  * Type erased storage for any service type or an override index
