@@ -45,6 +45,22 @@ set(KANGARU_INSTALL_INCLUDE_DIR "include")
 add_library(kangaru INTERFACE)
 add_library(kangaru::kangaru ALIAS kangaru)
 
+add_library(kangaru-library)
+add_library(kangaru::kangaru-library ALIAS kangaru-library)
+
+target_sources(kangaru-library
+        PUBLIC
+        FILE_SET CXX_MODULES
+        BASE_DIRS module
+        FILES module/kangaru/kangaru.cppm
+)
+
+target_sources(kangaru-library
+        PRIVATE
+        module/kangaru/kangaru.cpp
+)
+target_link_libraries(kangaru-library PUBLIC kangaru)
+
 target_compile_features(kangaru INTERFACE cxx_std_11)
 target_include_directories(kangaru INTERFACE
 	$<INSTALL_INTERFACE:${KANGARU_INSTALL_INCLUDE_DIR}>
