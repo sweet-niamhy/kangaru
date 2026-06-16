@@ -6,12 +6,13 @@ export module kangaru;
 
 export namespace kgr {
 
-	template<auto m>
-	using invoke_method = kgr::method<decltype(m), m>;
+	template <auto m> using invoke_method = kgr::method<decltype(m), m>;
 
 	using kgr::autocall;
 	using kgr::container;
 	using kgr::dependency;
 	using kgr::single_service;
+	using kgr::extern_service;
+	using kgr::supplied;
 
 } // namespace kgr
