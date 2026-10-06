@@ -11,6 +11,7 @@ export namespace kgr {
 	using kgr::autocall;
 	using kgr::container;
 	using kgr::dependency;
+	using kgr::shared_service;
 	using kgr::single_service;
 	using kgr::extern_service;
 	using kgr::supplied;
